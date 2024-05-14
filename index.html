@@ -1,15 +1,265 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>ыыы</title>
-        <link rel="stylesheet" href="css/style.css">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    </head>
-    <body>
-        <div>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ыыы</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/10bf1f9c8a.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="main-body">
+            <div class="row gutters-sm">
+                <div class="col-md-4 mb-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="d-flex flex-column align-items-center text-center">
+                                <img src="img/123.jpg" alt="Admin" class="rounded-circle" width="150">
+                                <div class="mt-3">
+                                    <h4>Иванов Иван Иванович</h4>
+                                    <p class="text-secondary mb-1">Начинающий программсит</p>
+                                    <p class="text-muted font-size-sm">ЭТФ, ИБ-311</p>
+                                    <a href="changeProfile.html" class="btn btn-outline-primary">Редактировать</a>
+                                    <a href="reports.html" class="btn btn-outline-primary">Отчеты</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card mt-3">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item d-flex justify-content-between align-items-center flex-wrap">
+                                <h6 class="mb-0 d-flex align-items-center">
+                                    <i class="fa-brands fa-github fs-4 me-1"></i>
+                                    <span>Github</span>
+                                </h6>
+                                <span class="text-secondary">bootdey</span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-center flex-wrap">
+                                <h6 class="mb-0 d-flex align-items-center">
+                                    <i class="fa-brands fa-telegram fs-4 me-1" style="color: #0088cc;"></i>
+                                    <span>Telegram</span>
+                                </h6>
+                                <span class="text-secondary">@bootdey</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="card mt-3">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item d-flex justify-content-between align-items-center flex-wrap">
+                                <h6 class="mb-0 d-flex align-items-center">
+                                    <i class="fa-solid fa-check fs-4 me-1 text-success"></i>
+                                    <span>Участий</span>
+                                </h6>
+                                <span class="text-dark">1</span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-center flex-wrap">
+                                <h6 class="mb-0 d-flex align-items-center">
+                                    <i class="fa-regular fa-star fs-4 me-1" style="color: gold;"></i>
+                                    <span>Место в рейтинге за месяц </span>
+                                </h6>
+                                <span class="text-dark">1</span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-center flex-wrap">
+                                <h6 class="mb-0 d-flex align-items-center">
+                                    <i class="fa-solid fa-star fs-4 me-1" style="color: gold;"></i>
+                                    <span>Место в рейтинге за все время </span>
+                                </h6>
+                                <span class="text-dark">1</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+                <div class="col-md-8">
+
+                    <div class="m-5 mt-0">
+
+                        <header style="font-size: 24px;">
+                            <p style="text-align: center;">
+                                Рейтинг
+                            </p>
+                        </header>
+
+
+                        <ul class="nav nav-pills mb-3 justify-content-evenly mb-3" id="pills-tab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link active" id="pillls-mounth-tab" data-bs-toggle="pill"
+                                    data-bs-target="#pillls-mounth" type="button" role="tab" aria-controls="pillls-mounth"
+                                    aria-selected="true">За месяц</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="pillls-all-time-tab" data-bs-toggle="pill"
+                                    data-bs-target="#pillls-all-time" type="button" role="tab"
+                                    aria-controls="pillls-all-time" aria-selected="false">За все время</button>
+                            </li>
+                        </ul>
+                        <div class="tab-content" id="pills-tabContent">
+                            <div class="tab-pane fade show active" id="pillls-mounth" role="tabpanel"
+                                aria-labelledby="pillls-mounth-tab" tabindex="0">
+                                <table id="mounth" class="table table-sm table-hover tab-pane fade show active"
+                                    role="tabpanel" aria-labelledby="pills-mounth-tab" tabindex="0">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">Место</th>
+                                            <th scope="col">Участник</th>
+                                            <th scope="col">Баллы</th>
+                                            <th scope="col">Участия</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody class="table-group-divider">
+                                        <tr>
+                                            <th scope="row">1</th>
+                                            <td>Иван И</td>
+                                            <td>25</td>
+                                            <td>9</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">2</th>
+                                            <td>Денис Д</td>
+                                            <td>18</td>
+                                            <td>6</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">2</th>
+                                            <td>Денис Д</td>
+                                            <td>14</td>
+                                            <td>5</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">2</th>
+                                            <td>Денис Д</td>
+                                            <td>10</td>
+                                            <td>6</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">2</th>
+                                            <td>Денис Д</td>
+                                            <td>6</td>
+                                            <td>3</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">2</th>
+                                            <td>Денис Д</td>
+                                            <td>2</td>
+                                            <td>2</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">2</th>
+                                            <td>Денис Д</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">2</th>
+                                            <td>Денис Д</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">2</th>
+                                            <td>Денис Д</td>
+                                            <td>0</td>
+                                            <td>1</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">2</th>
+                                            <td>Денис Д</td>
+                                            <td>0</td>
+                                            <td>1</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="tab-pane fade" id="pillls-all-time" role="tabpanel"
+                                aria-labelledby="pillls-all-time-tab" tabindex="0">
+                                <table id="alltime" class="table table-sm table-hover">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">Мест1о</th>
+                                            <th scope="col">Участник</th>
+                                            <th scope="col">Баллы</th>
+                                            <th scope="col">Участия</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody class="table-group-divider">
+                                        <tr>
+                                            <th scope="row">1</th>
+                                            <td>Иван И</td>
+                                            <td>25</td>
+                                            <td>9</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">2</th>
+                                            <td>Денис Д</td>
+                                            <td>18</td>
+                                            <td>6</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">2</th>
+                                            <td>Денис Д</td>
+                                            <td>14</td>
+                                            <td>5</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">2</th>
+                                            <td>Денис Д</td>
+                                            <td>10</td>
+                                            <td>6</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">2</th>
+                                            <td>Денис Д</td>
+                                            <td>6</td>
+                                            <td>3</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">2</th>
+                                            <td>Денис Д</td>
+                                            <td>2</td>
+                                            <td>2</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">2</th>
+                                            <td>Денис Д</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">2</th>
+                                            <td>Денис Д</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">2</th>
+                                            <td>Денис Д</td>
+                                            <td>0</td>
+                                            <td>1</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">2</th>
+                                            <td>Денис Д</td>
+                                            <td>0</td>
+                                            <td>1</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- OLD -->
+        <!-- <div>
             <div>
                 <header>
                     <div class="menuButton">
@@ -20,89 +270,55 @@
                 </header>
             </div>
             <div>
-                <div style="display: flex; flex-direction: row; justify-content: space-between; align-items: flex-start;">
+                <div
+                    style="display: flex; flex-direction: row; justify-content: space-between; align-items: flex-start;">
                     <div style="font-size: 18px; margin: 40px 0px 0px 100px">
-                        <div style="display: block;">
-                            <div class="aboutNameItems">
-                                <img src="img/123.jpg" width="100px" height="100px" style="border-radius: 50px;">
-                                <p>Иванов Иван Иванович</p>
-                            </div>
-                            <p>О себе:</p>
-                            <p>Крутой тип и все такое</p>
-                            <div style="display: flex; flex-direction: row;">
-                                <p>Факультет:</p>
-                                <p>ЭТФ</p>
-                            </div>
-                            <div style="display: flex; flex-direction: row;">
-                                <p>Группа:</p>
-                                <p>ИБ-311</p>
-                            </div>
-                            <div class="aboutButton">
-                                <a href="changeProfile.html" style="text-decoration: none; color: white">Настройка профиля</a>
-                            </div>
+
+
+                        <div class="d-flex align-items-center fs-3 mb-5">
+                            <img src="img/123.jpg" width="100px" height="100px" style="border-radius: 50px;">
+                            <span class="ms-2">Иванов Иван Иванович</span>
                         </div>
-                        <div>
-                            <div style="display: flex; flex-direction: row;">
-                                <p>Кол-во участий:</p>
-                                <p>1</p>
-                            </div>
-                            <div style="display: flex; flex-direction: row;">
-                                <p>Место в рейтинге за месяц:</p>
-                                <p>1</p>
-                            </div>
-                            <div style="display: flex; flex-direction: row;">
-                                <p>Место в рейтинге за все время:</p>
-                                <p>1</p>
-                            </div>
+                        <p>О себе:</p>
+                        <p>Крутой тип и все такое</p>
+                        <div style="display: flex; flex-direction: row;">
+                            <p>Факультет:</p>
+                            <p>ЭТФ</p>
                         </div>
-                        <div>
-                            <p>Список сертификатов:</p>
-                            <div style="display: flex; flex-direction: row; flex-wrap: wrap;">
-                                <img src="img/123.jpg" width="200px">
-                            </div>
+                        <div style="display: flex; flex-direction: row;">
+                            <p>Группа:</p>
+                            <p>ИБ-311</p>
+                        </div>
+                        <div class="aboutButton">
+                            <a href="changeProfile.html" style="text-decoration: none; color: white">Настройка
+                                профиля</a>
                         </div>
                     </div>
-                    <div style="width: 500px; margin: 40px 100px 0px 0px; background: #d9d9d9">
-                        <header style="font-size: 24px;">
-                            <p style="text-align: center;">
-                                Рейтинг
-                            </p>
-                        </header>
-                        <div style="font-size: 18px; display: flex; justify-content: space-around; flex-direction: row;">
-                            <p>За месяц</p>
-                            <p>За все время</p>
+                    <div>
+                        <div style="display: flex; flex-direction: row;">
+                            <p>Кол-во участий:</p>
+                            <p>1</p>
                         </div>
-                        <div>
-                            <div class="rateItems" style="display: flex; flex-direction: row; justify-content: space-around; flex-wrap: wrap">
-                                <p>Место</p>
-                                <p>Участник</p>
-                                <p>Баллы</p>
-                                <p>Участия</p>
-                            </div>
-                            <div>
-                                <div class="rateItems" style="display: flex; flex-direction: row; justify-content: space-around; flex-wrap: wrap">
-                                    <p>1</p>
-                                    <div style="display: flex; flex-direction: row;">
-                                        <img src="img/123.jpg" width="25px" height="25" style="border-radius: 12.5px;">
-                                        <p>Иван И</p>
-                                    </div>
-                                    <p>3</p>
-                                    <p>1</p>
-                                </div>
-                                <div class="rateItems" style="display: flex; flex-direction: row; justify-content: space-around; flex-wrap: wrap; opacity: 0">
-                                    <p>1</p>
-                                    <div style="display: flex; flex-direction: row;">
-                                        <img src="img/123.jpg" width="25px" height="25" style="border-radius: 12.5px;">
-                                        <p>Иван И</p>
-                                    </div>
-                                    <p>3</p>
-                                    <p>1</p>
-                                </div>
-                            </div>
+                        <div style="display: flex; flex-direction: row;">
+                            <p>Место в рейтинге за месяц:</p>
+                            <p>1</p>
+                        </div>
+                        <div style="display: flex; flex-direction: row;">
+                            <p>Место в рейтинге за все время:</p>
+                            <p>1</p>
+                        </div>
+                    </div>
+                    <div>
+                        <p>Список сертификатов:</p>
+                        <div style="display: flex; flex-direction: row; flex-wrap: wrap;">
+                            <img src="img/123.jpg" width="200px">
                         </div>
                     </div>
                 </div>
+
             </div>
-        </div>
-    </body>
+        </div> -->
+    </div>
+</body>
+
 </html>

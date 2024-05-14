@@ -21,6 +21,10 @@ html,body{
     touch-action: auto;
 }
 
+hr{
+    margin: 0.5rem !important;
+}
+
 input,button,textarea{font-family:inherit;}
 
 input::-ms-clear{display: none;}
