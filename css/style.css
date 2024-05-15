@@ -122,3 +122,22 @@ body {
     color: #78539E;
     transition: 0.2s;
 }
+
+.first::before {
+    content: url('img/GoldDuck.svg');
+    width: 25px;
+    margin-right: 5px;
+}
+
+.second::before {
+    content: url('/img/SilverDuck.svg');
+    width: 25px;
+    margin-right: 5px;
+}
+
+.third::before {
+    content: url('img/CooperDuck.svg');
+    width: 25px;
+    margin-right: 30px;
+    position: absolute;
+}
