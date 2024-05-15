@@ -7,13 +7,13 @@
     <title>ыыы</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/bootstrap/bootstrap.css">
-    <script src="js/bootstrap/bootstrap.js"></script>
     <script src="js/bootstrap/popper.min.js"></script>
+    <script src="js/bootstrap/bootstrap.js"></script>
     <script src="https://kit.fontawesome.com/10bf1f9c8a.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <div class="container">
+    <div class="container mt-5">
         <div class="main-body">
             <div class="row gutters-sm">
                 <div class="col-md-4 mb-3">
@@ -23,7 +23,7 @@
                                 <img src="img/123.jpg" alt="Admin" class="rounded-circle" width="150">
                                 <div class="mt-3">
                                     <h4>Иванов Иван Иванович</h4>
-                                    <p class="text-secondary mb-1">Начинающий программсит</p>
+                                    <p class="text-secondary mb-1">Начинающий программиcт</p>
                                     <p class="text-muted font-size-sm">ЭТФ, ИБ-311</p>
                                     <a href="changeProfile.html" type="button" class="btn btn-outline-primary"
                                         data-bs-toggle="modal" data-bs-target="#profileEdit">Редактировать</a>
@@ -62,14 +62,14 @@
                             <li class="list-group-item d-flex justify-content-between align-items-center flex-wrap">
                                 <h6 class="mb-0 d-flex align-items-center">
                                     <i class="fa-regular fa-star fs-4 me-1" style="color: gold;"></i>
-                                    <span>Место в рейтинге за месяц </span>
+                                    <span>Баллы за месяц </span>
                                 </h6>
                                 <span class="text-dark">1</span>
                             </li>
                             <li class="list-group-item d-flex justify-content-between align-items-center flex-wrap">
                                 <h6 class="mb-0 d-flex align-items-center">
                                     <i class="fa-solid fa-star fs-4 me-1" style="color: gold;"></i>
-                                    <span>Место в рейтинге за все время </span>
+                                    <span>Место в рейтинге за месяц </span>
                                 </h6>
                                 <span class="text-dark">1</span>
                             </li>
@@ -81,25 +81,31 @@
 
                     <div class="m-5 mt-0">
 
-                        <header style="font-size: 24px;">
+                        <div style="font-size: 24px;">
                             <p style="text-align: center;">
                                 Рейтинг
                             </p>
-                        </header>
-
-
-                        <ul class="nav nav-pills mb-3 justify-content-evenly mb-3" id="pills-tab" role="tablist">
-                            <li class="nav-item" role="presentation">
-                                <button class="nav-link active" id="pillls-mounth-tab" data-bs-toggle="pill"
-                                    data-bs-target="#pillls-mounth" type="button" role="tab"
-                                    aria-controls="pillls-mounth" aria-selected="true">За месяц</button>
-                            </li>
-                            <li class="nav-item" role="presentation">
-                                <button class="nav-link" id="pillls-all-time-tab" data-bs-toggle="pill"
-                                    data-bs-target="#pillls-all-time" type="button" role="tab"
-                                    aria-controls="pillls-all-time" aria-selected="false">За все время</button>
-                            </li>
-                        </ul>
+                            
+                        </div>
+                        <div class="row align-items-baseline">
+                            <ul class="nav nav-pills mb-3 justify-content-evenly mb-3 col-md-11" id="pills-tab" role="tablist">
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link active" id="pillls-mounth-tab" data-bs-toggle="pill"
+                                        data-bs-target="#pillls-mounth" type="button" role="tab"
+                                        aria-controls="pillls-mounth" aria-selected="true">За месяц</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="pillls-all-time-tab" data-bs-toggle="pill"
+                                        data-bs-target="#pillls-all-time" type="button" role="tab"
+                                        aria-controls="pillls-all-time" aria-selected="false">За все время</button>
+                                </li>
+                            </ul>
+                            <span class="d-inline-block col-md-1" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="Здесь написано про баллы">
+                                <button style="color: #78539E; background: white;" class="btn btn-primary fa-solid fa-circle-question rounded-circle border-0 p-1" type="button" disabled></button>
+                            </span>
+                        </div>
+                        <div class="">
+                        </div>
                         <div class="tab-content" id="pills-tabContent">
                             <div class="tab-pane fade show active" id="pillls-mounth" role="tabpanel"
                                 aria-labelledby="pillls-mounth-tab" tabindex="0">
@@ -182,7 +188,7 @@
                                 <table id="alltime" class="table table-sm table-hover">
                                     <thead>
                                         <tr>
-                                            <th scope="col">Мест1о</th>
+                                            <th scope="col">Место</th>
                                             <th scope="col">Участник</th>
                                             <th scope="col">Баллы</th>
                                             <th scope="col">Участия</th>
@@ -257,13 +263,12 @@
                 </div>
             </div>
         </div>
-        <footer
-            style="display: flex; align-items: center; flex-direction: row; flex-wrap: nowrap; justify-content: center; font-size: 14px; margin-top: 50px">
-            <img src="img/logo.jpg" style="border-radius: 17.5px;" width="35px" height="35px">
+        <footer style="display: flex; align-items: center; flex-direction: row; flex-wrap: nowrap; justify-content: center; font-size: 14px; margin-top: 50px">
+            <img src="img/UrSecLogo.svg" height="35px">
             <div style="color: rgb(108 117 125) !important; margin-left: 10px;">© 2024 UrSec.</div>
             <a style="color: rgb(108 117 125) !important; margin-left: 25px">Platforms.</a>
             <a style="color: rgb(108 117 125) !important; margin-left: 25px">USURT.</a>
-            <a style="color: rgb(108 117 125) !important; margin-left: 25px">R&D Academy.</a>
+            <img style="margin-left: 10px" src="img/Безымянный-1.svg" height="40px">
         </footer>
     </div>
 
@@ -344,11 +349,16 @@
 
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-primary">Сохранить изменения</button>
+                    <button style="background: #78539E;" type="button" class="btn btn-primary">Сохранить изменения</button>
                 </div>
             </div>
         </div>
     </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script>
+        const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
+         const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
+    </script>
 </body>
 
 </html>
