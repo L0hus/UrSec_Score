@@ -25,7 +25,8 @@
                                     <h4>Иванов Иван Иванович</h4>
                                     <p class="text-secondary mb-1">Начинающий программсит</p>
                                     <p class="text-muted font-size-sm">ЭТФ, ИБ-311</p>
-                                    <a href="changeProfile.html" class="btn btn-outline-primary">Редактировать</a>
+                                    <a href="changeProfile.html" type="button" class="btn btn-outline-primary"
+                                        data-bs-toggle="modal" data-bs-target="#profileEdit">Редактировать</a>
                                     <a href="reports.html" class="btn btn-outline-primary">Отчеты</a>
                                 </div>
                             </div>
@@ -90,8 +91,8 @@
                         <ul class="nav nav-pills mb-3 justify-content-evenly mb-3" id="pills-tab" role="tablist">
                             <li class="nav-item" role="presentation">
                                 <button class="nav-link active" id="pillls-mounth-tab" data-bs-toggle="pill"
-                                    data-bs-target="#pillls-mounth" type="button" role="tab" aria-controls="pillls-mounth"
-                                    aria-selected="true">За месяц</button>
+                                    data-bs-target="#pillls-mounth" type="button" role="tab"
+                                    aria-controls="pillls-mounth" aria-selected="true">За месяц</button>
                             </li>
                             <li class="nav-item" role="presentation">
                                 <button class="nav-link" id="pillls-all-time-tab" data-bs-toggle="pill"
@@ -256,73 +257,97 @@
                 </div>
             </div>
         </div>
-        <footer style="display: flex; align-items: center; flex-direction: row; flex-wrap: nowrap; justify-content: center; font-size: 14px; margin-top: 50px">
+        <footer
+            style="display: flex; align-items: center; flex-direction: row; flex-wrap: nowrap; justify-content: center; font-size: 14px; margin-top: 50px">
             <img src="img/logo.jpg" style="border-radius: 17.5px;" width="35px" height="35px">
             <div style="color: rgb(108 117 125) !important; margin-left: 10px;">© 2024 UrSec.</div>
             <a style="color: rgb(108 117 125) !important; margin-left: 25px">Platforms.</a>
             <a style="color: rgb(108 117 125) !important; margin-left: 25px">USURT.</a>
             <a style="color: rgb(108 117 125) !important; margin-left: 25px">R&D Academy.</a>
         </footer>
-        <!-- OLD -->
-        <!-- <div>
-            <div>
-                <header>
-                    <div class="menuButton">
-                        <a href="reports.html" style="text-decoration: none; color: white">
-                            Отчеты
-                        </a>
-                    </div>
-                </header>
-            </div>
-            <div>
-                <div
-                    style="display: flex; flex-direction: row; justify-content: space-between; align-items: flex-start;">
-                    <div style="font-size: 18px; margin: 40px 0px 0px 100px">
+    </div>
 
-
-                        <div class="d-flex align-items-center fs-3 mb-5">
-                            <img src="img/123.jpg" width="100px" height="100px" style="border-radius: 50px;">
-                            <span class="ms-2">Иванов Иван Иванович</span>
-                        </div>
-                        <p>О себе:</p>
-                        <p>Крутой тип и все такое</p>
-                        <div style="display: flex; flex-direction: row;">
-                            <p>Факультет:</p>
-                            <p>ЭТФ</p>
-                        </div>
-                        <div style="display: flex; flex-direction: row;">
-                            <p>Группа:</p>
-                            <p>ИБ-311</p>
-                        </div>
-                        <div class="aboutButton">
-                            <a href="changeProfile.html" style="text-decoration: none; color: white">Настройка
-                                профиля</a>
-                        </div>
-                    </div>
-                    <div>
-                        <div style="display: flex; flex-direction: row;">
-                            <p>Кол-во участий:</p>
-                            <p>1</p>
-                        </div>
-                        <div style="display: flex; flex-direction: row;">
-                            <p>Место в рейтинге за месяц:</p>
-                            <p>1</p>
-                        </div>
-                        <div style="display: flex; flex-direction: row;">
-                            <p>Место в рейтинге за все время:</p>
-                            <p>1</p>
-                        </div>
-                    </div>
-                    <div>
-                        <p>Список сертификатов:</p>
-                        <div style="display: flex; flex-direction: row; flex-wrap: wrap;">
-                            <img src="img/123.jpg" width="200px">
-                        </div>
-                    </div>
+    <div class="modal fade" id="profileEdit" tabindex="-1" aria-labelledby="profileEditModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="profileEditModalLabel">Редактирование профиля</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
                 </div>
+                <div class="modal-body">
+                    <ul class="nav nav-tabs" id="profileEditTab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="info-tab" data-bs-toggle="tab"
+                                data-bs-target="#info-tab-pane" type="button" role="tab" aria-controls="info-tab-pane"
+                                aria-selected="true">Профиль</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="security-tab" data-bs-toggle="tab"
+                                data-bs-target="#security-tab-pane" type="button" role="tab"
+                                aria-controls="security-tab-pane" aria-selected="false">Безопасность</button>
+                        </li>
+                    </ul>
+                    <div class="tab-content" id="profileEditTabContent">
+                        <div class="tab-pane fade show active" id="info-tab-pane" role="tabpanel"
+                            aria-labelledby="info-tab" tabindex="0">
+                            <form>
+                                <div class="mb-3">
+                                    <label for="avatar" class="col-form-label">Аватар:</label>
+                                    <input type="file" class="form-control" id="avatar" name="avatar"
+                                        accept="image/png, image/jpeg" />
+                                </div>
+                                <div class="mb-3 text-center">
+                                    <span class="fs-4">Иванов Иван Иванович</span>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="fac" class="col-form-label">Факультет:</label>
+                                    <input type="text" class="form-control" id="fac" name="fac" />
+                                </div>
+                                <div class="mb-3">
+                                    <label for="group" class="col-form-label">Группа:</label>
+                                    <input type="text" class="form-control" id="group" name="group" />
+                                </div>
+                                <div class="mb-3">
+                                    <label for="about" class="col-form-label">О себе:</label>
+                                    <textarea type="text" class="form-control" id="about" name="about"> </textarea>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="tab-pane fade" id="security-tab-pane" role="tabpanel" aria-labelledby="security-tab"
+                            tabindex="0">
+                            <div class="row">
+                                <div class="col-md-7">
+                                    <div class="col my-1" style="min-width: 250px;">
+                                        <label for="current_password" class="col-form-label">текущий пароль:</label>
+                                        <input type="password" name="current_password" class="form-control"
+                                            placeholder="Введите текущий пароль" required="">
+                                    </div>
+                                    <div class="col my-2 d-none d-md-block"></div>
+                                    <div class="col my-1" style="min-width: 250px;">
+                                        <label for="new_password" class="col-form-label">текущий пароль:</label>
+                                        <input type="password" name="new_password" class="form-control"
+                                            placeholder="Введите новый пароль" required="">
+                                    </div>
+                                    <div class="col my-1" style="min-width: 250px;">
+                                        <label for="new_password_repeat" class="col-form-label">текущий пароль:</label>
+                                        <input type="password" name="new_password_repeat" class="form-control"
+                                            placeholder="Повторите новый пароль" required="">
+                                    </div>
+                                </div>
+                                <div class="col-md-5 d-flex justify-content-center align-items-center">
+                                    <button type="button" class="btn btn-primary" style="height: 16%;">Сохранить</button>
+                                </div>
+                            </div>
 
+                        </div>
+                    </div>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary">Сохранить изменения</button>
+                </div>
             </div>
-        </div> -->
+        </div>
     </div>
 </body>
 
