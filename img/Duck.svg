@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 28.2.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" [
+	<!ENTITY ns_extend "http://ns.adobe.com/Extensibility/1.0/">
+	<!ENTITY ns_ai "http://ns.adobe.com/AdobeIllustrator/10.0/">
+	<!ENTITY ns_graphs "http://ns.adobe.com/Graphs/1.0/">
+	<!ENTITY ns_vars "http://ns.adobe.com/Variables/1.0/">
+	<!ENTITY ns_imrep "http://ns.adobe.com/ImageReplacement/1.0/">
+	<!ENTITY ns_sfw "http://ns.adobe.com/SaveForWeb/1.0/">
+	<!ENTITY ns_custom "http://ns.adobe.com/GenericCustomNamespace/1.0/">
+	<!ENTITY ns_adobe_xpath "http://ns.adobe.com/XPath/1.0/">
+]>
+<svg version="1.1"
+	 id="Слой_1" xmlns:x="&ns_extend;" xmlns:i="&ns_ai;" xmlns:graph="&ns_graphs;" xmlns:serif="http://www.serif.com/"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="800px" height="800px"
+	 viewBox="0 0 800 800" style="enable-background:new 0 0 800 800;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;}
+	.st1{fill-rule:evenodd;clip-rule:evenodd;fill:#FFFFFF;}
+</style>
+<metadata>
+	<sfw  xmlns="&ns_sfw;">
+		<slices></slices>
+		<sliceSourceBounds  bottomLeftOrigin="true" height="10000" width="16000" x="-12800" y="-7600"></sliceSourceBounds>
+	</sfw>
+</metadata>
+<rect id="Icons" x="-12800" y="-1600" class="st0" width="16000" height="10000"/>
+<g id="Icons1" serif:id="Icons">
+	<g id="Strike">
+	</g>
+	<g id="H1">
+	</g>
+	<g id="H2">
+	</g>
+	<g id="H3">
+	</g>
+	<g id="list-ul">
+	</g>
+	<g id="hamburger-1">
+	</g>
+	<g id="hamburger-2">
+	</g>
+	<g id="list-ol">
+	</g>
+	<g id="list-task">
+	</g>
+	<g id="trash">
+	</g>
+	<g id="vertical-menu">
+	</g>
+	<g id="horizontal-menu">
+	</g>
+	<g id="sidebar-2">
+	</g>
+	<g id="Pen">
+	</g>
+	<g id="Pen1" serif:id="Pen">
+	</g>
+	<g id="clock">
+	</g>
+	<g id="external-link">
+	</g>
+	<g id="hr">
+	</g>
+	<g id="info">
+	</g>
+	<g id="warning">
+	</g>
+	<g id="plus-circle">
+	</g>
+	<g id="minus-circle">
+	</g>
+	<g id="vue">
+	</g>
+	<g id="cog">
+	</g>
+	<g id="logo">
+	</g>
+	<g id="radio-check">
+	</g>
+	<g id="eye-slash">
+	</g>
+	<g id="eye">
+	</g>
+	<g id="toggle-off">
+	</g>
+	<g id="shredder">
+	</g>
+	<g id="spinner--loading--dots-" serif:id="spinner [loading, dots]">
+	</g>
+	<g id="react">
+	</g>
+	<g id="check-selected">
+	</g>
+	<path id="duck" class="st1" d="M217.6,319.9c0,0,25.7,10.4,24.8,36.1c-0.9,25.8-83.2,37-83.2,138.7s113.7,181.7,240.2,181.7
+		c126.5,0,298.4-74.2,298.4-222.9c0-249.7-18.9-76.7-216-76.7c-65.4,0-77.1-22.3-66.8-35.1c48.9-60.1,66.8-218.1-92.8-218.1
+		c-104.1,2.2-129.2,86.8-129.1,107.3c0.1,14.4-15,19.3-91.3,16.4C82.7,317.6,217.6,319.9,217.6,319.9L217.6,319.9z M264.7,190.3
+		c13.8,0,25,11.2,25,25c0,13.8-11.2,25-25,25c-13.8,0-25-11.2-25-25C239.7,201.5,250.9,190.3,264.7,190.3L264.7,190.3z"/>
+	<g id="turn-off">
+	</g>
+	<g id="code-block">
+	</g>
+	<g id="user">
+	</g>
+	<g id="coffee-bean">
+	</g>
+	<g id="coffee-beans">
+		<g id="coffee-bean1" serif:id="coffee-bean">
+		</g>
+	</g>
+	<g id="coffee-bean-filled">
+	</g>
+	<g id="coffee-beans-filled">
+		<g id="coffee-bean2" serif:id="coffee-bean">
+		</g>
+	</g>
+	<g id="clipboard">
+	</g>
+	<g id="clipboard-paste">
+	</g>
+	<g id="clipboard-copy">
+	</g>
+	<g id="Layer1">
+	</g>
+</g>
+</svg>
