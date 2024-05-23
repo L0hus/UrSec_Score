@@ -156,3 +156,9 @@ body {
     --bs-btn-disabled-border-color: #fff !important;
     --bs-gradient: none !important;
 }
+
+@media (max-width: 576px) {
+    footer{
+        display: none !important;
+    }
+}
