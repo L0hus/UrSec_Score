@@ -1,21 +1,22 @@
 <!DOCTYPE html>
+{% load static %}
 <html>
 
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ыыы</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/bootstrap/bootstrap.css">
-    <script src="js/bootstrap/popper.min.js"></script>
-    <script src="js/bootstrap/bootstrap.js"></script>
+    <link rel="stylesheet" href="{% static "css/style.css" %}">
+    <link rel="stylesheet" href="{% static "css/bootstrap/bootstrap.css" %}">
+    <script src="{% static "js/bootstrap/bootstrap.js" %}"></script>
+    <script src="{% static "js/bootstrap/popper.js" %}"></script>
     <script src="https://kit.fontawesome.com/10bf1f9c8a.js" crossorigin="anonymous"></script>
 </head>
 
 <body style="background-color: #ECECEE;">
     <nav class="navbar" style="background-color: #a484c4;">
         <div class="container-fluid">
-            <img class="ms-3" src="img/Duck.svg" width="45px">
+            <img class="ms-3" src="{% static "images/Duck.svg" %}" width="45px">
             <a href="login.html" class="btn btnNav fs-5 me-3">Выйти</a>
         </div>
     </nav>
@@ -26,7 +27,7 @@
                     <div class="card">
                         <div class="card-body">
                             <div class="d-flex flex-column align-items-center text-center">
-                                <img src="img/123.jpg" alt="Admin" class="rounded-circle" width="150">
+                                <img src="{% static "images/123.jpg" %}" alt="Admin" class="rounded-circle" width="150">
                                 <div class="mt-3">
                                     <h4>Иванов Иван Иванович</h4>
                                     <p class="mb-1" style="color: #9052d1;">Начинающий программиcт</p>
@@ -282,11 +283,11 @@
         </div>
     </div>
     <footer style="display: flex; align-items: center; flex-direction: row; flex-wrap: nowrap; justify-content: center; font-size: 14px; margin-top: 10px">
-        <img src="img/UrSecLogo.svg" height="35px">
+        <img src="{% static "images/UrSecLogo.svg" %}"  height="35px">
         <div style="color: rgb(108 117 125) !important; margin-left: 10px;">© 2024 UrSec.</div>
         <a style="color: rgb(108 117 125) !important; margin-left: 25px">Platforms.</a>
         <a style="color: rgb(108 117 125) !important; margin-left: 25px">USURT.</a>
-        <img style="margin-left: 10px" src="img/usurt.svg" height="40px">
+        <img style="margin-left: 10px" src="{% static "images/usurt.svg" %}"  height="40px">
     </footer>
 
     <div class="modal fade" id="profileEdit" tabindex="-1" aria-labelledby="profileEditModalLabel" aria-hidden="true">
