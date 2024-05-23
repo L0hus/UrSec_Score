@@ -1,12 +1,14 @@
 from django.conf import settings
 from django.urls import path, re_path
-from User import views
+from profile.views import login_page
+from reports.views import index, report, test
 from django.conf.urls.static import static
 
 urlpatterns = [
-    path("", views.index),
-    re_path(r'^report', views.report),
-    path("test/", views.test),
+    path("", index, name="index"),
+    re_path(r'^report', report, name="reports"),
+    re_path(r'^login', login_page, name="login"),
+    path("test/", test),
 ]
 
 if settings.DEBUG:
